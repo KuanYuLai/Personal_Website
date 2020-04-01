@@ -6,9 +6,9 @@ class Card extends Component {
 
   render() {
     return (
-      <div className="card" style={{ width: 18 + "rem" }}>
+      <div className="card" margin="Auto" style={{ width: 18 + "rem" }}>
         <img
-          src={require(`../pics/${this.props.Name}.png`)}
+          src={require(`../static/${this.props.Name}.png`)}
           className="card-img-top"
           alt="Image"
         ></img>
