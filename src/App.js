@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Global, css } from "@emotion/core";
 import {
   BrowserRouter as Router,
   Switch,
@@ -17,15 +18,21 @@ import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
 import ErrorPage from "./pages/ErrorPage";
 
-function home() {
-  return <h2> dfad</h2>;
-}
+const globalStyles = css`
+  @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 180px;
+  }
+`;
 
 class App extends Component {
   state = {};
   render() {
     return (
       <div>
+        <Global style={globalStyles} />
         <NavBar />
 
         <Router>

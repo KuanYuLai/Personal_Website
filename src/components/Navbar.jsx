@@ -1,23 +1,52 @@
 import React, { Component } from "react";
+import styled from "@emotion/styled/macro";
+
+const Nav = styled.nav`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  border-bottom: 3px solid #f0f8ff;
+`;
+
+const NavList = styled.ul`
+  list-style-type: none;
+  overflow: hidden;
+  margin: auto 0px;
+`;
+
+const NavItem = styled.li`
+  display: block;
+  float: left;
+  &:hover {
+    border-bottom: 2px solid #00bfff;
+  }
+  &:active {
+    border-bottom: 2px solid #00bfff;
+  }
+`;
 
 class NavBar extends Component {
   state = {};
+
+  generateNavItem() {}
+
   render() {
     return (
-      <nav class="navbar navbar-dark" style={{ border: dashed }}>
-        <ul class="nav nav-pills justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" href="/">
+      <Nav>
+        <NavList>
+          <NavItem class="nav-item">
+            <a class="nav-link" href="/">
               Home
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Project">
-              Projects
+          </NavItem>
+          <NavItem class="nav-item">
+            <a class="nav-link disabled" href="/Blog">
+              Blog
             </a>
-          </li>
-        </ul>
-      </nav>
+          </NavItem>
+        </NavList>
+      </Nav>
     );
   }
 }

@@ -4,8 +4,9 @@ import "bootstrap/dist/css/bootstrap.css";
 import styled from "@emotion/styled/macro";
 
 const CardsContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
   width: 100%;
-  border-style: dotted;
 `;
 
 class Cards extends Component {
@@ -17,16 +18,14 @@ class Cards extends Component {
   render() {
     return (
       <CardsContainer className="container">
-        <div className="row">
-          {this.state.projects.map(projects => (
-            <Card
-              className="col"
-              URL={this.state.URL + projects}
-              key={projects}
-              Name={projects}
-            />
-          ))}
-        </div>
+        {this.state.projects.map(projects => (
+          <Card
+            className="col"
+            URL={this.state.URL + projects}
+            key={projects}
+            Name={projects}
+          />
+        ))}
       </CardsContainer>
     );
   }
