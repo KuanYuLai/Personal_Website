@@ -6,7 +6,7 @@ import {
   Route,
   Link,
   useRouteMatch,
-  useParams
+  useParams,
 } from "react-router-dom";
 import "./App.css";
 
@@ -18,12 +18,15 @@ import HomePage from "./pages/HomePage";
 import ProjectPage from "./pages/ProjectPage";
 import ErrorPage from "./pages/ErrorPage";
 
+import Resume from "./static/Resume.pdf";
+
 const globalStyles = css`
   @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
   body {
     font-family: "Roboto", sans-serif;
     font-size: 180px;
+    min-width: 500px;
   }
 `;
 
@@ -42,6 +45,8 @@ class App extends Component {
             <Route component={ErrorPage} />
           </Switch>
         </Router>
+
+        <Footer />
       </div>
     );
   }

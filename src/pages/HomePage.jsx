@@ -23,19 +23,28 @@ const ProfileContainer = styled.div`
 `;
 
 const AboutContainer = styled.div`
-  width: 50%;
+  width: 55%;
   margin: 20px auto;
+  display: block;
+`;
+
+const LinkContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  a:hover {
+    color: white;
+    text-decoration: none;
+  }
 `;
 
 function Aboutme() {
   return (
-    <Section_white>
+    <Section_white id="About">
       <ProfileContainer>
         <ProfileImg src={avatar2} />
       </ProfileContainer>
       <AboutContainer>
         <p>
-          {" "}
           I am an extremely hard-working, friendly and creative person. I really
           enjoy working with peers ever since I was a junior high school
           student. I have been programming for more than 10 years and had
@@ -44,6 +53,18 @@ function Aboutme() {
           technology and problem-solving will remain my love and interest in my
           life.
         </p>
+        <LinkContainer>
+          <a href="https://drive.google.com/file/d/1GxGRBnmOlOURGTFlJDUFVQVS98PObFGi/view?usp=sharing">
+            <button type="button" class="btn btn-outline-primary">
+              Resume
+            </button>
+          </a>
+          <a href="mailto:yorklai0523@gmail.com">
+            <button type="button" class="btn btn-outline-primary">
+              Email me
+            </button>
+          </a>
+        </LinkContainer>
       </AboutContainer>
     </Section_white>
   );
@@ -51,7 +72,7 @@ function Aboutme() {
 
 function Projects() {
   return (
-    <Section_color>
+    <Section_color id="Projects">
       <Cards />
     </Section_color>
   );

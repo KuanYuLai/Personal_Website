@@ -12,7 +12,7 @@ const Nav = styled.nav`
 const NavList = styled.ul`
   list-style-type: none;
   overflow: hidden;
-  margin: auto 0px;
+  margin: auto 20% auto 0px;
 `;
 
 const NavItem = styled.li`
@@ -41,8 +41,18 @@ class NavBar extends Component {
             </a>
           </NavItem>
           <NavItem class="nav-item">
-            <a class="nav-link disabled" href="/Blog">
-              Blog
+            <a class="nav-link " href="#About">
+              About
+            </a>
+          </NavItem>
+          <NavItem class="nav-item">
+            <a class="nav-link " href="#Projects">
+              Projects
+            </a>
+          </NavItem>
+          <NavItem class="nav-item">
+            <a class="nav-link " href="#Contact">
+              Contact
             </a>
           </NavItem>
         </NavList>

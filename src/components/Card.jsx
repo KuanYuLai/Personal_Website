@@ -10,7 +10,7 @@ const CardTop = styled.div`
 const CardTemp = styled.div`
   display: block;
   width: 20rem;
-  margin: auto;
+  margin: 20px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -33,31 +33,6 @@ const Title = styled.h5`
 class Card extends Component {
   state = {};
 
-  tempalte() {
-    return (
-      <React.Fragment>
-        <div>
-          <img
-            src={require(`../static/${this.props.Name}.png`)}
-            className="card-img-top"
-            alt="Preview"
-          ></img>
-        </div>
-
-        <div className="card-body">
-          <h5 className="card-title">{this.props.Name}</h5>
-          <p className="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href={this.props.URL} className="btn btn-primary">
-            View Project
-          </a>
-        </div>
-      </React.Fragment>
-    );
-  }
-
   generateCard() {
     return (
       <CardTemp class="card">
@@ -77,7 +52,10 @@ class Card extends Component {
             bulk of the card's content.
           </p>
           <a href={this.props.URL} class="card-link">
-            View Project
+            Live Demo
+          </a>
+          <a href={this.props.Git_URL} class="card-link">
+            View Code
           </a>
         </div>
       </CardTemp>
