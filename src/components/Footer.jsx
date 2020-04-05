@@ -90,7 +90,7 @@ class Footer extends Component {
         </a>
         . The source code is{" "}
         <a
-          href="https://github.com/robwhess/my-osu-website"
+          href="https://github.com/KuanYuLai/Personal_Website"
           target="_blank"
           rel="noopener noreferrer"
         >
