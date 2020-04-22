@@ -15,7 +15,7 @@ const CardsContainer = styled.div`
 
 class Cards extends Component {
   state = {
-    URL: "http://web.engr.oregonstate.edu/~laik/",
+    URL: "http://web.engr.oregonstate.edu/~laik/projects/",
     GithubURL: "https://github.com/KuanYuLai/",
     projects: ["Weather", "Zombie"],
   };

@@ -38,13 +38,11 @@ class App extends Component {
         <Global style={globalStyles} />
         <NavBar />
 
-        <Router>
-          <Switch>
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/Project" component={ProjectPage} />
-            <Route component={ErrorPage} />
-          </Switch>
-        </Router>
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/Project" component={ProjectPage} />
+          <Route component={ErrorPage} />
+        </Switch>
 
         <Footer />
       </div>
