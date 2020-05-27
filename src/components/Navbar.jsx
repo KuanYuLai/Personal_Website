@@ -52,7 +52,7 @@ class NavBar extends Component {
             </a>
           </NavItem>
           <NavItem class="nav-item">
-            <a class="nav-link " href="/~laik#Contact">
+            <a class="nav-link " href="mailto:yorklai0523@gmail.com">
               Contact
             </a>
           </NavItem>
