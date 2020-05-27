@@ -2,10 +2,12 @@ import React, { Component } from "react";
 import Card from "./Card";
 import "bootstrap/dist/css/bootstrap.css";
 import styled from "@emotion/styled/macro";
+import project_data from "../data/projects.json";
 
 const CardsContainer = styled.div`
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 100%;
 
   @media (max-width: 500px) {
@@ -15,21 +17,20 @@ const CardsContainer = styled.div`
 
 class Cards extends Component {
   state = {
-    URL: "http://web.engr.oregonstate.edu/~laik/projects/",
-    GithubURL: "https://github.com/KuanYuLai/",
-    projects: ["Weather", "Zombie"],
+    data: project_data,
   };
-
   render() {
     return (
       <CardsContainer className="container">
-        {this.state.projects.map((projects) => (
+        {this.state.data.map((projects) => (
           <Card
             className="col"
-            URL={this.state.URL + projects}
-            Git_URL={this.state.GithubURL + projects}
-            key={projects}
-            Name={projects}
+            URL={projects.URL}
+            Git_URL={projects.Github}
+            key={projects.Name}
+            Name={projects.Name}
+            Description={projects.Description}
+            Picture={projects.Picture}
           />
         ))}
       </CardsContainer>

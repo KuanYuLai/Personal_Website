@@ -17,7 +17,7 @@ if [[ ${CURRENT_BRANCH} == ${DEPLOY_BRANCH} ]]; then
 
 	# Only deploy if build succeeded.
 	if npm run build; then
-		rsync -avz --delete ${DEPLOY_SRC_DIR} ${DEPLOY_USERNAME}@${DEPLOY_HOST}:${DEPLOY_DEST_DIR}/
+		rsync -avz --delete ${DEPLOY_SRC_DIR}/ ${DEPLOY_USERNAME}@${DEPLOY_HOST}:${DEPLOY_DEST_DIR}/
 	else
 		echo "== Error: build failed; not deploying"
 	fi

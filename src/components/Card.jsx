@@ -20,6 +20,7 @@ const CardTemp = styled.div`
   img {
     display: block;
     width: 100%;
+    height: 200px;
   }
 `;
 
@@ -38,7 +39,7 @@ class Card extends Component {
       <CardTemp class="card">
         <CardTop>
           <img
-            src={require(`../static/${this.props.Name}.png`)}
+            src={require(`../static/${this.props.Picture}`)}
             className="card-img-top"
             alt="Preview"
           />
@@ -47,13 +48,12 @@ class Card extends Component {
           </Title>
         </CardTop>
         <div class="card-body">
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
-          <a href={this.props.URL} class="card-link">
+          <p class="card-text">{this.props.Description}</p>
+
+          {/* <a href={this.props.URL} class="card-link">
             Live Demo
-          </a>
+    </a> */}
+
           <a href={this.props.Git_URL} class="card-link">
             View Code
           </a>

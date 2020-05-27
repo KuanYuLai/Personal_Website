@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "Weather",
+    "URL": "http://web.engr.oregonstate.edu/~laik/projects/Weather",
+    "Github": "https://github.com/KuanYuLai/Weather",
+    "Picture": "Weather.png",
+    "Description": "This is a weather indication app, user can add their favorite location to the widget to view different weather information at the same time. The weather data is from OpenWeatherMap"
+  },
+  {
+    "Name": "Smart Job Advisor - HP",
+    "URL": "http://ec2-3-22-222-29.us-east-2.compute.amazonaws.com:3000/",
+    "Github": "https://github.com/KuanYuLai/Senior-Project",
+    "Picture": "sja.svg",
+    "Description": "This is a setting recommendation application for HP industrial printing press. It can evaluate the pre-select settings from the user and generate the optimal settings. "
+  }
+]

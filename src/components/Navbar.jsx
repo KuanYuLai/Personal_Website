@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "@emotion/styled/macro";
+//import link from ReactRouterDom;
 
 const Nav = styled.nav`
   width: 100%;
@@ -36,22 +37,22 @@ class NavBar extends Component {
       <Nav>
         <NavList>
           <NavItem class="nav-item">
-            <a class="nav-link" href="/">
+            <a class="nav-link" href="/~laik">
               Home
             </a>
           </NavItem>
           <NavItem class="nav-item">
-            <a class="nav-link " href="#About">
+            <a class="nav-link " href="/~laik#About">
               About
             </a>
           </NavItem>
           <NavItem class="nav-item">
-            <a class="nav-link " href="#Projects">
+            <a class="nav-link " href="/~laik#Projects">
               Projects
             </a>
           </NavItem>
           <NavItem class="nav-item">
-            <a class="nav-link " href="#Contact">
+            <a class="nav-link " href="/~laik#Contact">
               Contact
             </a>
           </NavItem>

@@ -14,8 +14,8 @@ const ProfileImg = styled.img`
 `;
 
 const ProfileContainer = styled.div`
-  width: 150px;
-  height: 150px;
+  width: 350px;
+  height: 350px;
   position: relative;
   overflow: hidden;
   border-radius: 50%;
